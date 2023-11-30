@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  word-break: keep-all;
+  font-family: "Nanum Gothic Coding", monospace;
+
+}
+
+*::selection {
+  color: orange;
+  background: purple;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  mix-blend-mode: difference;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu{
+  font-size: 1.2rem;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  border: 3px ridge;
+  border-radius: 50%;
+}
+
+.project-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  border-top: 1px solid black;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.column1:hover{
+  color: white;
+}
+
+.column1{
+  width: 80vw;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.column2{
+  text-align: end;
+}
+
+.project-content{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: .5rem 1.2rem;
+  display: none;
+  overflow: hidden;
+}
+
+.description{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 390px) {
+  .menu{
+    font-size: .8rem;
+    margin: .3rem;
+    padding: .3rem .5rem;
+    border: 2px ridge;
+    border-radius: 50%;
+  }
+
+  .project-title{
+    font-size: .8rem;
+  }
+
+  .project-content{
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+}
+
+
