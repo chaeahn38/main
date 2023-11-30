@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  word-break: keep-all;
+  font-family: "Nanum Gothic Coding", monospace;
+
+}
+
+*::selection {
+  color: orange;
+  background: purple;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  mix-blend-mode: difference;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu{
+  font-size: 1.2rem;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  border: 3px ridge;
+  border-radius: 50%;
+}
+
+.description{
+  padding: 0 .5rem 2rem .5rem;
+}
+
+ul{
+  text-decoration: underline;
+  padding: .8rem 0rem;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+@media screen and (max-width: 390px) {
+  .menu{
+    font-size: .8rem;
+    margin: .3rem;
+    padding: .3rem .5rem;
+    border: 2px ridge;
+    border-radius: 50%;
+  }
+}
+
+
