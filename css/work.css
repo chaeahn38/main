@@ -30,14 +30,14 @@ a:hover{
   font-size: 1.2rem;
   margin: .5rem;
   padding: .5rem 1rem;
-  border: 3px ridge;
+  border: 5px ridge;
   border-radius: 50%;
 }
 
 .project-title{
   display: flex;
   justify-content: space-between;
-  padding: 1.2rem;
+  padding: 0.2rem 1rem 2rem 1rem;
   border-top: 1px solid black;
   font-size: 1.1rem;
   cursor: pointer;
@@ -65,7 +65,7 @@ a:hover{
 
 .project-content{
   font-size: .9rem;
-  padding: .5rem 1rem;
+  padding: 1rem;
   display: none;
   overflow: hidden;
 }
@@ -85,14 +85,21 @@ img{
   padding-right: .5rem;
 }
 
-@media screen and (max-width: 620px) {
-  .project-title{
-    padding: 1rem;
+@media screen and (max-width: 890px) {
+  .menu{
     font-size: .8rem;
+    margin: .3rem;
+    padding: .2rem .5rem;
+    border: 3px ridge;
+  }
+
+  .project-title{
+    font-size: .8rem;
+    padding: 0.2rem 1rem 2rem 1rem;
   }
   .project-content{
     font-size: .5rem;
-    padding: 0 1rem 1rem 1rem;
+    padding: 1rem;
   }
 
   .img-carousel{
@@ -100,20 +107,84 @@ img{
   }
 
   img{
-    height: 150px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .menu{
+    font-size: .7rem;
+    margin: .3rem;
+    padding: .2rem .4rem;
+    border: 2.5px ridge;
+  }
+
+  .project-title{
+    font-size: .6rem;
+    padding: 0.1rem .6rem 1rem .6rem;
+  }
+  .project-content{
+    font-size: .4rem;
+    padding: .6rem;
+  }
+
+  .img-carousel{
+    margin-top: .5rem;
+  }
+
+  img{
+    height: 240px;
   }
 }
 
 @media screen and (max-width: 390px) {
   .menu{
-    font-size: .8rem;
+    font-size: .7rem;
     margin: .3rem;
-    padding: .3rem .5rem;
-    border: 2px ridge;
-    border-radius: 50%;
+    padding: .2rem .4rem;
+    border: 2.5px ridge;
+  }
+
+  .project-title{
+    font-size: .6rem;
+    padding: 0.1rem .6rem .5rem .6rem;
+  }
+  .project-content{
+    font-size: .3rem;
+    padding: .6rem;
+  }
+
+  .img-carousel{
+    margin-top: .5rem;
   }
 
   img{
-    height: 130px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu{
+    font-size: .7rem;
+    margin: .3rem;
+    padding: .2rem .4rem;
+    border: 2.5px ridge;
+  }
+
+  .project-title{
+    font-size: .5rem;
+    padding: 0.2rem .6rem .8rem .6rem;
+  }
+  .project-content{
+    font-size: .3rem;
+    padding: .6rem;
+  }
+
+  .img-carousel{
+    margin-top: .4rem;
+  }
+
+  img{
+    height: 180px;
   }
 }
